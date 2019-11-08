@@ -102,9 +102,10 @@ led_setup_t leds_rainbow_s[] = {
 
 //pipcorona test
 led_setup_t pipcorona_test[] = {
-    { .hs = 0, .he = 100, .rs = 0, .re = 255, .gs = 0, .ge = 0, .bs = 0, .be = 0, .ef = EF_NONE },
-    { .hs = 0, .he = 15, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 0, .be = 255, .ef = EF_SCR_R },
-    { .hs = 15, .he = 30, .rs = 0, .re = 255, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R },
+    { .hs = 0, .he = 50, .rs = 255, .re = 255, .gs = 0, .ge = 0, .bs = 0, .be = 0, .ef = EF_NONE },
+    { .hs = 50, .he = 100, .rs = 0, .re = 0, .gs = 0, .ge = 0, .bs = 255, .be = 255, .ef = EF_NONE },
+    //{ .hs = 0, .he = 15, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 0, .be = 255, .ef = EF_SCR_R },
+    //{ .hs = 15, .he = 30, .rs = 0, .re = 255, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R },
     { .end = 1 },
 };
 
