@@ -255,13 +255,19 @@ led_instruction_t led_instructions[] = {
     { .flags = LED_FLAG_USE_ROTATE_PATTERN },
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0x1, .r = 255, .g = 255, .b = 255 },
 
-     //Layer 2 Colors
-    //{ .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .id0 = 0x2000, .id1 = 0xDC801400 }, //base pattern
+    //Layer 1 Colors
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xF0000, .id1 = 0x1E000, .id2 = 0x8, .id3 = 0x1F0, .r = 255, .layer = 1 }, //red
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xE000E000, .id1 = 0xDF801DE7, .id2 = 0xFF81FFF7, .id3 = 0xF, .g = 255, .layer = 1 }, //green
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FC00000, .id1 = 0x780200, .id2 = 0x7E0000, .b = 255, .layer = 1 }, //blue
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FFE, .r = 255, .g = 255, .layer = 1 }, //yellow
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x300000, .id1 = 0x20060018, .r = 255, .b = 255, .layer = 1 }, //purple
+
+
+    //Layer 2 Colors
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x20004002, .id1 = 0x1000000, .id2 = 0x7, .g = 255, .layer = 2 }, //green
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC00F8000, .id1 = 0x16007, .r = 255, .g = 255, .b = 255, .layer = 2 }, //white
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id1 = 0x60000, .r = 255, .layer = 2 },//red
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id1 = 0x60000, .r = 255, .layer = 2 }, //red
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FF01FFC, .id1 = 0x22788BF8, .r = 0, .g = 0, .b = 0, .layer = 2 }, //null off
-    //{ .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xFFFFFFFF, .id1 = 0xFFFFFFFF, .id2 = 0xFFFFFFFF, .id3 = 0xFFFFFFFF, .g = 255, .layer = 2 },
 
     //end must be set to 1 to indicate end of instruction set
     { .end = 1 }
