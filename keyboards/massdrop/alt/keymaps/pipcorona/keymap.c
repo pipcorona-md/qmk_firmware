@@ -271,9 +271,10 @@ led_instruction_t led_instructions[] = {
 
     //Layer 2 Colors
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x80020000, .id1 = 0x20003003, .g = 255, .layer = 2 }, //green
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xE, .id1 = 0xC004, .b = 255, .layer = 2 }, //blue
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xE, .id1 = 0x4, .b = 255, .layer = 2 }, //blue
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC0000, .id1 = 0x80000, .r = 255, .g = 255, .layer = 2 }, //yellow
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x10000, .b = 255, .g = 127, .layer = 2 }, //blue/green
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id1 = 0xC000, .r = 255, .g = 80, .layer = 2 },//orange
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x7FF0FFF0, .id1 = 0xDFF70FF8, .id2 = 0xFFFFFFFF, .id3 = 0x1FF, .r = 0, .g = 0, .b = 0, .layer = 2 }, //null off
 
     //Layer 3 Colors
