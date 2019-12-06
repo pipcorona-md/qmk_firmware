@@ -100,12 +100,13 @@ led_setup_t leds_rainbow_s[] = {
     { .end = 1 },
 };
 
-//pipcorona test
-led_setup_t pipcorona_test[] = {
-    { .hs = 0, .he = 50, .rs = 255, .re = 255, .gs = 0, .ge = 0, .bs = 0, .be = 0, .ef = EF_NONE },
-    { .hs = 50, .he = 100, .rs = 0, .re = 0, .gs = 0, .ge = 0, .bs = 255, .be = 255, .ef = EF_NONE },
-    //{ .hs = 0, .he = 15, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 0, .be = 255, .ef = EF_SCR_R },
-    //{ .hs = 15, .he = 30, .rs = 0, .re = 255, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R },
+//weeoooweeooo
+led_setup_t weeoooweeooo[] = {
+    { .hs = 0, .he = 5, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .hs = 5, .he = 47.5, .rs = 0, .re = 255, .gs = 0, .ge = 0, .bs = 0, .be = 0, .ef = EF_SCR_R },
+    { .hs = 47.5, .he = 52.5, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .hs = 52.5, .he = 95, .rs = 0, .re = 0, .gs = 0, .ge = 0, .bs = 0, .be = 255, .ef = EF_SCR_R },
+    { .hs = 95, .he = 100, .rs = 255, .re = 0, .gs = 0, .ge = 0, .bs = 255, .be = 0, .ef = EF_SCR_R | EF_SUBTRACT },
     { .end = 1 },
 };
 
@@ -114,6 +115,7 @@ led_setup_t pipcorona_test[] = {
 //Add the new animation name to the list below following its format
 
 void *led_setups[] = {
+    weeoooweeooo,
     leds_rainbow_s,
     leds_rainbow_ns,
     leds_teal_salmon,
@@ -124,7 +126,6 @@ void *led_setups[] = {
     leds_white,
     leds_white_with_red_stripe,
     leds_black_with_red_stripe,
-    pipcorona_test,
     leds_off
 };
 
