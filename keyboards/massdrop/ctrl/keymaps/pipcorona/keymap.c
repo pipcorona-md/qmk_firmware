@@ -273,7 +273,7 @@ led_instruction_t led_instructions[] = {
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xA000, .id2 = 0x700800, .g = 255, .layer = 2 }, //green
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id1 = 0x7C003E, .id2 = 0xB, .r = 255, .g = 255, .b = 255, .layer = 2 }, //white
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id2 = 0x30, .r = 255, .layer = 2 }, //red
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xDFFF5FFE, .id1 = 0x3F800001, .id2 = 0x3C4 .r = 0, .g = 0, .b = 0, .layer = 2 }, //null off
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xDFFF5FFE, .id1 = 0x3F800001, .id2 = 0x3C4, .r = 0, .g = 0, .b = 0, .layer = 2 }, //null off
 
     //end must be set to 1 to indicate end of instruction set
      { .end = 1 }
