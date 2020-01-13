@@ -54,9 +54,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [3] = LAYOUT(
         KC_GRV,  TG(1),   TG(2),   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,  KC_NO,  KC_BSPC, KC_MUTE, \
         L_T_BR,  L_PSD,   L_BRI,   L_PSI,   L_EDG_I, KC_NO, KC_NO, KC_NO, KC_NO,KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_END,  \
-        L_T_PTD, L_PTP,   L_BRD,   L_PTN,   L_EDG_D, MAGIC_UNSWAP_LALT_LGUI, MAGIC_SWAP_LALT_LGUI, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,          KC_ENT, KC_NO, \
+        L_T_PTD, L_PTP,   L_BRD,   L_PTN,   L_EDG_D, MAGIC_UNSWAP_LALT_LGUI, MAGIC_SWAP_LALT_LGUI, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,KC_ENT, KC_NO, \
         KC_LSFT, L_T_MD,  L_T_ONF, KC_NO, L_EDG_M, MD_BOOT, TG_NKRO, KC_NO, KC_NO, KC_NO, KC_NO, KC_RSFT,          KC_VOLU, KC_NO, \
-        KC_LCTL, KC_LALT, KC_LGUI,                            DBG_FAC,                            KC_RGUI, _______, KC_MPRV, KC_VOLD, KC_MNXT   \
+        KC_LCTL, KC_LALT, KC_LGUI,                            KC_MPLY,                            KC_RGUI, _______, KC_MPRV, KC_VOLD, KC_MNXT   \
     ),
     /*
     [X] = LAYOUT(
@@ -280,7 +280,7 @@ led_instruction_t led_instructions[] = {
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x7FF0FFF0, .id1 = 0xDFF70FF8, .id2 = 0xFFFFFFFF, .id3 = 0x1FF, .r = 0, .g = 0, .b = 0, .layer = 2 }, //null off
 
     //Layer 3 Colors
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x20004006, .id1 = 0x1000000, .id2 = 0x7, .g = 255, .layer = 3 }, //green
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x20004006, .id1 = 0x21000000, .id2 = 0x7, .g = 255, .layer = 3 }, //green
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC00F8000, .id1 = 0x16007, .r = 255, .g = 255, .b = 255, .layer = 3 }, //white
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id1 = 0x60018, .r = 255, .layer = 3 }, //red
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FF01FF8, .id1 = 0x2788BE0, .r = 0, .g = 0, .b = 0, .layer = 3 }, //null off
