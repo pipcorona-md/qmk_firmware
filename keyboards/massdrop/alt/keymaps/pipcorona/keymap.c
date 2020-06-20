@@ -260,13 +260,11 @@ led_instruction_t led_instructions[] = {
 
     //All LEDs use the user's selected pattern (this is the factory default)
     { .flags = LED_FLAG_USE_ROTATE_PATTERN },
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0x20004001, .id1 = 0x800, .r = 255, .g = 255, .b = 255 },
-    //{ .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0x20004001, .id1 = 0x2000800, .r = 255, .g = 255, .b = 255 }, //after pika
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0x20004001, .id1 = 0x2000800, .r = 255, .g = 255, .b = 255 },
 
     //Layer 1 Colors
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xF0000, .id1 = 0x1E000, .id2 = 0x8, .id3 = 0x1F0, .r = 255, .layer = 1 }, //red
-    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC000A000, .id1 = 0xDF8015E7, .id2 = 0xFF83FFF7, .id3 = 0xF, .g = 255, .layer = 1 }, //green
-    //{ .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC000A000, .id1 = 0xDD8015E7, .id2 = 0xFF83FFF7, .id3 = 0xF, .g = 255, .layer = 1 }, //green after pika
+    { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0xC000A000, .id1 = 0xDD8015E7, .id2 = 0xFF83FFF7, .id3 = 0xF, .g = 255, .layer = 1 }, //green
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FC00000, .id1 = 0x780200, .id2 = 0x7E0000, .b = 255, .layer = 1 }, //blue
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x1FFE, .r = 255, .g = 255, .layer = 1 }, //yellow
     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_MATCH_LAYER | LED_FLAG_USE_RGB, .id0 = 0x300000, .id1 = 0x20060018, .r = 255, .b = 255, .layer = 1 }, //purple
